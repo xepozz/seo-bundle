@@ -32,7 +32,7 @@ class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder('cmf_seo');
 
-        $nodeBuilder = $treeBuilder->root()
+        $nodeBuilder = $treeBuilder->getRootNode()
             ->addDefaultsIfNotSet()
             ->beforeNormalization()
                 ->ifTrue(function ($config) {
